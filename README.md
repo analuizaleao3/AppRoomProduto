@@ -1,4 +1,4 @@
-# AppRoomProduto: Cadastro de Produtos com Room SQLite
+fe# AppRoomProduto: Cadastro de Produtos com Room SQLite
 
 **Aluno(a):** Ana Luiza Leão Araujo
 **RA:** 240081
@@ -21,7 +21,7 @@ usando persistência local com Room (SQLite).
 - 
 ## Prints do app
 
-![Tela inicial](docs/prints/tela-inicial.png)
+![Tela inicial](docs\prints\tela-inicial.PNG)
 ![Logcat com a listagem](docs/prints/logcat.png)
 
 ## Parte A: Complemento prático
