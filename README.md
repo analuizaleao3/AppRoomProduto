@@ -18,11 +18,10 @@ usando persistência local com Room (SQLite).
 - Room 2.6.1 (SQLite)
 - ViewBinding
 - Corrotinas (lifecycleScope)
-- 
 ## Prints do app
 
 ![Tela inicial](docs/prints/tela-inicial.PNG)
-![Logcat com a listagem](docs/prints/logcat.png)
+![Logcat com a listagem](docs/prints/logcat.PNG)
 
 ## Parte A: Complemento prático
 ### A1. Limpar campos após inserir
@@ -35,8 +34,8 @@ binding.editProductPrice.text.clear()
 binding.editProductDescription.text.clear()
 binding.editProductName.requestFocus()
 ```
-Print: ![A1](docs/prints/A1a.png)
-Print: ![A1](docs/prints/A1b.png)
+Print: ![A1](docs/prints/A1a.PNG)
+Print: ![A1](docs/prints/A1b.PNG)
 
 ### A2. Validação de preço
 O que foi feito: Adicionado validação do preço no começo da ação do botão "Inserir Produto"
@@ -65,7 +64,7 @@ else{
     binding.editProductName.requestFocus()
 }
 ```
-Print: ![A2](docs/prints/A2.png)
+Print: ![A2](docs/prints/A2.PNG)
 
 ### A3. Lista na tela
 O que foi feito: Adicionamos na tela um TextView e na ação do botão btnListarProdutos uma varíavel que irá concatenar todos os produtos e inserir no TextView criado.
@@ -90,7 +89,7 @@ binding.btnListarProdutos.setOnClickListener {
     }
 }
 ```
-Print: ![A3](docs/prints/A3.png)
+Print: ![A3](docs/prints/A3.PNG)
 
 ### A4. Total do estoque:
 O que foi feito: Adicionamos na ação do botão btnListarProdutos duas variáveis uma pegando a quantidade de produtos no banco e o outro somando os preços dos produtos dentro do for. No final, juntamos essas infomações com a listagem de produtos.
@@ -119,7 +118,7 @@ Trecho de código:
     }
 }
 ```
-Print: ![A4](docs/prints/A4.png)
+Print: ![A4](docs/prints/A4.PNG)
 
 ### A5. Buscar por nome
 O que foi feito: Adicionamos o botão de buscar na tela e na ação dele colocamos a chamada do método buscarPorNome da DAO, após trazer os produtos relacionados, fazemos um for para montar o texto de retorno na tela.
@@ -147,7 +146,7 @@ binding.btnBuscar.setOnClickListener{
 
 }
 ```
-Print: ![A5](docs/prints/A5.png)
+Print: ![A5](docs/prints/A5.PNG)
 
 ### A6. Excluir produtos
 O que foi feito: Adicionamos o botão de deletar na tela e na ação dele .
@@ -161,7 +160,7 @@ Trecho de código:
     }
 }
 ```
-Print: ![A6](docs/prints/A6.png)
+Print: ![A6](docs/prints/A6.PNG)
 
 ### A7. Atualizar produto
 O que foi feito: Adicionamos o botão de atualizar na tela e criamos na DAO a query para atualizar o produto recebendo o id e o preço.
@@ -185,7 +184,7 @@ binding.btnAtualizar.setOnClickListener{
     }
 }
 ```
-Print: ![A7](docs/prints/A7.png)
+Print: ![A7](docs/prints/A7.PNG)
 
 ### A8. Novo campo na tabela
 O que foi feito: Após a mudança todos os produtos foram deletados. Isto porque utilizamos o .fallbackToDestructiveMigration() no databaseBuilder que recria o DB se o esquema mudar.
