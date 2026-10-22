@@ -21,7 +21,7 @@ usando persistência local com Room (SQLite).
 - 
 ## Prints do app
 
-![Tela inicial](docs\prints\tela-inicial.PNG)
+![Tela inicial](docs/prints/tela-inicial.PNG)
 ![Logcat com a listagem](docs/prints/logcat.png)
 
 ## Parte A: Complemento prático
